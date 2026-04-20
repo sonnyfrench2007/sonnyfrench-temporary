@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonny French</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Special+Elite&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0c0b0a;
+      --paper: #171513;
+      --text: #f3ead7;
+      --muted: #b8ad9a;
+      --accent: #d2b07a;
+      --border: #2a241f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+
+      background:
+        radial-gradient(circle at top, rgba(210,176,122,0.08), transparent 45%),
+        radial-gradient(circle at bottom, rgba(90,70,50,0.12), transparent 55%),
+        repeating-linear-gradient(
+          0deg,
+          rgba(255,255,255,0.025),
+          rgba(255,255,255,0.025) 1px,
+          transparent 2px,
+          transparent 4px
+        ),
+        var(--bg);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent, rgba(210,176,122,0.5), transparent);
+      opacity: 0.4;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 50px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, transparent 60%, rgba(0,0,0,0.5));
+      pointer-events: none;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-height: 380px;
+      object-fit: cover;
+      border-radius: 12px;
+      filter: contrast(1.1) saturate(0.8) sepia(0.15) brightness(0.9);
+      box-shadow: 0 35px 80px rgba(0,0,0,0.8);
+    }
+
+    h1 {
+      font-family: "IM Fell English", serif;
+      font-size: 3.3rem;
+      margin: 18px 0 0;
+    }
+
+    header p {
+      font-family: "Special Elite", monospace;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    section {
+      padding: 45px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: "IM Fell English", serif;
+      font-size: 1.3rem;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+    }
+
+    p {
+      line-height: 1.75;
+      opacity: 0.95;
+    }
+
+    /* VIDEO STACK */
+    .video-stack iframe {
+      width: 100%;
+      height: 420px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 6px 8px 0 0;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: "Special Elite", monospace;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .links a:hover {
+      background: var(--accent);
+      color: #1a120a;
+      border-color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-family: "Special Elite", monospace;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+
+    <img src="profile.jpg" class="hero-img" alt="Sonny French">
+
+    <h1>Sonny French</h1>
+    <p>Guitarist • Nashville • Jazz / Country / Rock</p>
+
+  </div>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>About</h2>
+    <div class="card">
+      <p>
+        I’m a Nashville-based guitarist blending jazz-influenced tonality with country and rock energy.
+        My playing lives in feel, space, and instinct — shaped by improvisation, tone, and storytelling.
+        I’m always chasing sound with character and edge.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Featured Performances</h2>
+    <div class="card video-stack">
+
+      <!-- FIRST VIDEO (Short) -->
+      <iframe src="https://www.youtube.com/embed/wIscDG52j1Y" allowfullscreen></iframe>
+
+      <!-- SECOND VIDEO -->
+      <iframe src="https://www.youtube.com/embed/NFApSxXTLFk" allowfullscreen></iframe>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Achievements</h2>
+    <div class="card">
+      <p>
+        • Grand Ole Opry performance<br>
+        • Australian Golden Guitar Award winner<br>
+        • Shared stage with Tommy Emmanuel, Jimmy Fortune, Jenee Fleenor, The Isaacs
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> sonnyfrench2007@gmail.com</p>
+
+      <div class="links">
+        <a href="https://www.instagram.com/sonnyfrenchmusic/" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@sonnyfrenchmusicc" target="_blank">TikTok</a>
+        <a href="https://www.facebook.com/profile.php?id=61587225991531" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Sonny French • Nashville Guitarist
+</footer>
+
+</body>
+</html>
